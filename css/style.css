@@ -1,0 +1,134 @@
+:root {
+  --primary-Red: hsl(0, 78%, 62%);
+  --primary-Cyan: hsl(180, 62%, 55%);
+  --primary-Orange: hsl(34, 97%, 64%);
+  --primary-Blue: hsl(212, 86%, 64%);
+
+  --neutral-Very-Dark-Blue: hsl(234, 12%, 34%);
+  --neutral-Grayish-Blue: hsl(229, 6%, 66%);
+  --neutral-Very-Light-Gray: hsl(0, 0%, 98%);
+
+  --font-size: 0.938rem;
+
+  --font-family: "Poppins", sans-serif;
+
+  --fw-200: 200;
+  --fw-400: 400;
+  --fw-600: 600;
+}
+
+body {
+  font-size: var(--font-size);
+  font-family: var(--font-family);
+}
+
+.header__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.sub-title {
+  padding: 3rem 0 0;
+  font-size: 2.185rem;
+  color: var(--neutral-Grayish-Blue);
+  font-weight: var(--fw-200);
+}
+.header-title {
+  margin: -2.5rem 0 1rem;
+  font-size: 2.2rem;
+  font-weight: var(--fw-600);
+}
+.title {
+  color: var(--neutral-Very-Dark-Blue);
+}
+.header__content {
+  max-width: 500px;
+  margin-bottom: 3rem;
+  color: var(--neutral-Grayish-Blue);
+}
+.content {
+  margin: -1rem 0 1.5rem;
+  font-weight: var(--fw-400);
+  color: var(--neutral-Grayish-Blue);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+/* cards */
+.card {
+  position: relative;
+  height: 250px;
+  max-width: 300px;
+  border-radius: 0.3rem;
+  box-shadow: rgba(97, 97, 97, 0.3) 0px 20px 25px 1px,
+    rgba(77, 76, 76, 0.04) 0px 10px 10px 1px;
+  padding: 1rem 2rem 0;
+}
+.card img {
+  position: absolute;
+  right: 2rem;
+}
+.card__cyan {
+  border-top: 5px solid var(--primary-Cyan);
+}
+.card__red {
+  border-top: 5px solid var(--primary-Red);
+}
+.card__orange {
+  border-top: 5px solid var(--primary-Orange);
+}
+.card__blue {
+  border-top: 5px solid var(--primary-Blue);
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+/* footer */
+.attribution {
+  font-size: 1rem;
+  text-align: center;
+
+  margin: 2rem 0;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (max-width: 60rem) {
+  .sub-title {
+    font-size: 1.485rem;
+  }
+  .header-title {
+    margin: -1.5rem 0 1rem;
+    font-size: 1.5rem;
+  }
+  .header__content {
+    max-width: 500px;
+    margin: 0 1.5rem 3rem;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+  /* cards */
+  .card {
+    margin: 0 1.5rem;
+  }
+}
